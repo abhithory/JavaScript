@@ -1,0 +1,70 @@
+html{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: black;
+    color: wheat;
+}
+
+
+
+.btn-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8rem;
+    margin-top: 4rem;
+}
+
+.show-model-btn{
+    background-color: black;
+    color: wheat;
+    font-size: 1.4rem;
+    border: 0.1rem solid wheat;
+    padding: 1rem 2rem;
+    border-radius: 30rem;
+    cursor: pointer;
+}
+
+.show-model-btn:hover{
+    border: 0.1rem solid rgb(253, 198, 96);
+}
+
+.model{
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    /* background-color: rgba(0, 0, 0, 0.146); */
+    backdrop-filter: blur(5px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.model-overlay{
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: transparent;
+    z-index: -1;
+}
+
+.model-content{
+    width: 60vw;
+    background-color: rgba(255, 255, 255, 0.698);
+    backdrop-filter: blur(5px);
+    padding: 6rem 4rem;
+    color: black;
+}
+
+
+.hidden{
+    display: none;
+}
