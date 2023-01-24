@@ -1,4 +1,4 @@
-"use Strict"
+"use strict"
 
 // Dom - The Document Object Model (DOM) is a programming interface for HTML and XML documents. It represents the structure of a document as a tree-like hierarchy, with each node in the tree representing a different aspect of the document, such as an element, an attribute, or text. The DOM allows developers to programmatically access and manipulate the content, structure, and style of a document
 
