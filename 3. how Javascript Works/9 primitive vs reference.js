@@ -53,3 +53,5 @@ userObj2.friends.push("zz")
 console.log(userObj1);
 console.log(userObj2);
 
+console.log("anthing");
+
