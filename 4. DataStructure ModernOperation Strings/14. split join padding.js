@@ -1,3 +1,4 @@
+'use strict';
 const newName = "Shekhar Sharma"
 const newString = "I+Am+Developer+.";
 

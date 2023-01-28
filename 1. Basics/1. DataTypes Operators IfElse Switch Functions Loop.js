@@ -22,6 +22,8 @@
 
 
 // Data types => any value can be Primitive or object
+// primitive is datatype that can not be divided more in other data types
+// in JS any value which is not object is primitive
 // Dynamic Typing => we don't need to manually define the data type. it determined automatically
 
 
