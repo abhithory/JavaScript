@@ -28,6 +28,7 @@ console.log(img.alt);
 console.log(img.src);
 
 console.log(img.getAttribute('src'));
+// img.setAttribute('src',"https://djfkld")
 console.log(img.className);
 
 
