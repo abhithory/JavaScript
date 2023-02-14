@@ -11,6 +11,18 @@
             --primary-color:rgb(206, 17, 17);
             --secoundary-color:rgb(206, 17, 17);
         }
+
+        .fullpage{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+            color: white;
+            margin: 12px 0;
+        }
+
     </style>
 </head>
 <body>
@@ -28,10 +40,22 @@
     <div id="newContent"></div>
 
 
+    <div class="fullpage">
+        <button id="scrollToPage2">to page 2</button>
+        <h1>Page 1</h1>
+    </div>
+
+    <div class="fullpage" id="page2">
+        <h1>Page 2</h1>
+    </div>
+
+
+
     <img src="./img/logo.png" alt="this is alt" width="100px" class="imgg img2" data-this-can-be-changed="22">
 
     <script src="./js/1. select create delete.js"></script>
 
     <script src="./js//2. styles atributes and classes.js"></script>
+    <script src="./js/3. scrolling with js.js"></script>
 </body>
 </html>
