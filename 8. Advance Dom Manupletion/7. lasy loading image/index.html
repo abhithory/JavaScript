@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section {
+            height: 80vh;
+            background-color: black;
+            margin: 22px 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: red;
+        }
+        .blur{
+            filter: blur(20px);
+        }
+
+        img{
+            width: 400px;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="sec-1">
+        <h1>Section 1</h1>
+    </section>
+
+    <img src="./img/img1-lazy.png" data-src="./img/img1.png" class="blur">
+    <br>
+    <img src="./img/img2-lazy.png" data-src="./img/img2.png" class="blur">
+
+    <script src="./index.js"></script>
+</body>
+
+</html>
