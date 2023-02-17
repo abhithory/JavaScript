@@ -41,3 +41,37 @@ console.log(Person.prototype.isPrototypeOf(Person));
 console.log(abhi.hasOwnProperty("fullName"));
 // it is of prototype property
 console.log(abhi.hasOwnProperty("species"));
+
+
+
+// prototype chain
+console.log(abhi.__proto__);
+
+// Object.prototype (top of prototype chain)
+console.log(abhi.__proto__.__proto__);
+
+// there is no prototype of object.prototype
+console.log(abhi.__proto__.__proto__.__proto__);
+
+
+
+// prototype of arrays
+
+const arr = [3,5,3,3,2,7,8,9,5,2]; // new Array === []
+
+console.log(arr.__proto__);
+console.log(arr.__proto__.__proto__);
+
+console.log(arr.__proto__ === Array.prototype);
+
+
+// creating custom functions for prototype
+Array.prototype.unique = function () {
+    return [...new Set(this)];
+}
+
+
+console.log(arr.unique());
+
+
+
