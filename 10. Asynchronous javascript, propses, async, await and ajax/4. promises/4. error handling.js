@@ -31,4 +31,23 @@ fetch("url").then(function(response){
     console.log(data);
 }).catch(err=>{
     console.log(err);
+    console.log(err.message);
+})
+
+
+// no mater callback is fullfilled or rejcted this method will be called always
+
+fetch("url").then(function(response){
+    return response.json()
+}).then(function(data){
+    console.log(data);
+
+    return fetch("newUrl")
+}).then(response=>response.json()).then(data=>{
+    console.log(data);
+}).catch(err=>{
+    console.log(err);
+    console.log(err.message);
+}).finally(()=>{
+    
 })
