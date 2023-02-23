@@ -30,10 +30,12 @@ class User{
 
     introduce(){
         console.log(`Hi i am ${this.fullName}`);
+        return this;
     }
     
     showMarks(){
         console.log(`Hi i scored ${this.marks} marks`);
+        return this;
     }
 
     // Private methods
@@ -45,7 +47,6 @@ class User{
 
 const abhi = new User("Abhishek",99,776655);
 
-console.log(abhi.fullName);
-console.log(abhi.marks);
-// console.log(abhi.#upiPin);
-// console.log(abhi.#getUpipin());
+
+// chaining
+abhi.introduce().showMarks().introduce().showMarks();
