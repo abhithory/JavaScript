@@ -1,9 +1,8 @@
 // commonjs module system is mainly for nodejs
 
 // Export
-export.addToCartCart = function(){
-
-}
+// export.addToCartCart = function(){
+// }
 
 
 // Import
